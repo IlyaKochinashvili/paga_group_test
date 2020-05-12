@@ -81,8 +81,12 @@ WSGI_APPLICATION = 'paga_group_test.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'paga_group_db',
+        'USER': 'paga_group_user',
+        'PASSWORD': 'paga_group',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
